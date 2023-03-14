@@ -39,28 +39,82 @@
 
             <div class="card-wrapper">
                 <div class="card">
-                    <h2>Assunto 1</h2>
+                    <h2>Assunto Z</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal1">Saiba mais</button>
+
+                    <div id="modal1" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto X</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h2>Assunto 1</h2>
+                    <h2>Assunto Y</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal2">Saiba mais</button>
+
+                    <div id="modal2" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto Y</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h2>Assunto 1</h2>
+                    <h2>Assunto Z</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal3">Saiba mais</button>
+
+                    <div id="modal3" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto Z</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,29 +132,108 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal4">Saiba mais</button>
+
+                    <div id="modal4" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto 1</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h2>Assunto 1</h2>
+                    <h2>Assunto 2</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal5">Saiba mais</button>
+
+                    <div id="modal5" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto 2</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h2>Assunto 1</h2>
+                    <h2>Assunto 3</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic maxime adipisci totam
                         voluptatem provident, natus sint. Officia, dolore quo.</p>
 
-                    <button>Saiba mais</button>
+                    <button class="abrirModal" data-modal-id="modal6">Saiba mais</button>
+
+                    <div id="modal6" class="modal">
+                        <div class="modal-conteudo">
+                            <div>
+                                <h2>Assunto 3</h2>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum fugiat aliquid
+                                    architecto
+                                    magnam exercitationem error nihil quo, optio harum nemo.</p>
+                            </div>
+
+                            <div>
+                                <button class="fecharModal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
+
+    <script>
+
+        const modal = document.querySelectorAll('.modal')
+        const botaoAbrir = document.querySelectorAll('.abrirModal')
+        const botaoFechar = document.querySelectorAll('.fecharModal')
+
+        botaoAbrir.forEach(abrirModal => {
+            abrirModal.addEventListener('click', function () {
+                const modalId = this.getAttribute('data-modal-id');
+                const modal = document.getElementById(modalId);
+                modal.classList.add('aberto');
+            });
+        });
+
+        botaoFechar.forEach(fecharModal => {
+            fecharModal.addEventListener('click', function () {
+                const modal = this.closest('.modal');
+                modal.classList.remove('aberto');
+            });
+        });
+
+
+
+    </script>
 </body>
 
 </html>

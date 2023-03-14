@@ -8,7 +8,18 @@
     text-decoration: none;
 }
 
-h1, h2, h3, a {
+:root {
+    font-size: 62.5%;
+
+    --cor-fundo: #222;
+    --cor-fundo2: #303030;
+    --cor-destaque: #ec6308;
+}
+
+h1,
+h2,
+h3,
+a {
     color: white;
 }
 
@@ -34,6 +45,8 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.8rem;
+
+    transition: .3s;
 }
 
 button:hover {
@@ -41,13 +54,7 @@ button:hover {
     transform: rotate(10deg);
 }
 
-:root {
-    font-size: 62.5%;
 
-    --cor-fundo: #222;
-    --cor-fundo2: rgb(48, 48, 48);
-    --cor-destaque: rgb(236, 99, 8);
-}
 
 body {
     font-family: 'Manrope', sans-serif;
@@ -111,4 +118,38 @@ nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 100;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+
+    width: 60%;
+    height: 400px;
+
+    margin-inline: auto;
+    background-color: var(--cor-fundo2);
+    border-radius: 5px;
+
+    -webkit-box-shadow: 4px 2px 31px -11px rgba(236, 99, 8, 1);
+    -moz-box-shadow: 4px 2px 31px -11px rgba(236, 99, 8, 1);
+    box-shadow: 4px 2px 31px -11px rgba(236, 99, 8, 1);
+}
+
+.modal-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    height: 400px;
+}
+
+.aberto {
+    display: block !important;
 }
