@@ -8,7 +8,10 @@
     text-decoration: none;
 }
 
-h1, h2, h3, a {
+h1,
+h2,
+h3,
+a {
     color: white;
 }
 
@@ -86,12 +89,14 @@ nav ul {
 .projeto a {
     display: flex;
 }
+
 .pesquisar {
     width: 100%;
 
     text-align: center;
-  
+
 }
+
 .pesquisar input {
     background-color: var(--cor-fundo2);
     color: white;
@@ -147,4 +152,23 @@ nav ul {
 
 .card:hover {
     transform: scale(1.1);
+}
+
+
+.animacao {
+    position: relative;
+
+    animation: girar 2s infinite ease;
+}
+
+
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
